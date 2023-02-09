@@ -16,8 +16,9 @@ def headers
 end
 
 def register(students)
+   num = 0
   students.each do |student|
-    puts (" #{student[:name]} #{student[:cohort]} cohort") 
+    puts (" #{num += 1} #{student[:name]} #{student[:cohort]} cohort") 
   end
 end
 
