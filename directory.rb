@@ -1,6 +1,4 @@
 students = [
-  {name: "The students of Villains Academy"},
-  {name: "-------------"},
   {name: "Dr. Hannibal Lecter"},
   {name: "Darth Vader"},
   {name: "Nurse Ratched"},
@@ -11,10 +9,22 @@ students = [
   {name: "Freddy Krueger"},
   {name: "The Joker"},
   {name: "Joffrey Baratheon"},
-  {name: "Norman Bates"},
-  {name: "Overall we have 11 great sudents"}
+  {name: "Norman Bates"}
 ]
-
-students.each do |student|
-  puts student[:name]
+def headers 
+  puts "The students of Villains Academy"
+  puts "-------------"
 end
+
+def register (num)
+  num.each do |student|
+    puts student[:name]
+  end
+end
+
+def footer(num)
+  puts "Overall, we have #{num.count} great students"
+end
+headers
+register(students)
+footer(students)
