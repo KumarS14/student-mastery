@@ -1,15 +1,15 @@
 students = [
-  {name: "Dr. Hannibal Lecter"},
-  {name: "Darth Vader"},
-  {name: "Nurse Ratched"},
-  {name: "Michael Corleone"},
-  {name: "Alex DeLarge"},
-  {name: "The Wicked Witch of the West"},
-  {name: "Terminator"},
-  {name: "Freddy Krueger"},
-  {name: "The Joker"},
-  {name: "Joffrey Baratheon"},
-  {name: "Norman Bates"}
+  {name: "Dr. Hannibal Lecter", cohort: :november },
+  {name: "Darth Vader", cohort: :november },
+  {name: "Nurse Ratched", cohort: :november },
+  {name: "Michael Corleone", cohort: :november },
+  {name: "Alex DeLarge", cohort: :november },
+  {name: "The Wicked Witch of the West", cohort: :november },
+  {name: "Terminator", cohort: :november },
+  {name: "Freddy Krueger", cohort: :november },
+  {name: "The Joker", cohort: :november },
+  {name: "Joffrey Baratheon", cohort: :november },
+  {name: "Norman Bates", cohort: :november }
 ]
 def headers 
   puts "The students of Villains Academy"
@@ -18,7 +18,7 @@ end
 
 def register (num)
   num.each do |student|
-    puts student[:name]
+    puts (" #{student[:name]} #{student[:cohort]} cohort") 
   end
 end
 
