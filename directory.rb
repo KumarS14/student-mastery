@@ -18,7 +18,7 @@ end
 def register(students)
    num = 0
   students.each do |student|
-    if student[:name][0] == "p"
+    if student[:name][0] == "p" && student[:name].length < 12
       puts (" #{num += 1} #{student[:name]} #{student[:cohort]} cohort") 
     end
   end
